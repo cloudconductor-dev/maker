@@ -47,10 +47,10 @@ https://github.com/settings/applications/new
 
 Register new application as following information.
 
--- Application name: Any ( ex. maker )
--- Homepage URL: A root url of this application. ( ex. http://192.168.0.1/maker/ )
--- Description: Any
--- Authorization callback: A callback url that append "/oauth/callback" to root url. ( ex. http://192.168.0.1/maker/oauth/callback )
+- Application name: Any ( ex. maker )
+- Homepage URL: A root url of this application. ( ex. http://192.168.0.1/maker/ )
+- Description: Any
+- Authorization callback: A callback url that append "/oauth/callback" to root url. ( ex. http://192.168.0.1/maker/oauth/callback )
 
 Please memorize "Client ID" and "Client secret" that indicate right-top corner in the next page when submit.
 
