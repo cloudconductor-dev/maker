@@ -213,8 +213,8 @@ get '/oauth/callback' do
       code: params['code']
     },
     headers: {
-      'Accept' => 'application/json',
-    },
+      'Accept' => 'application/json'
+    }
   }
 
   query[:http_proxyaddr] = auth_data['http_proxyaddr'] if auth_data['http_proxyaddr']

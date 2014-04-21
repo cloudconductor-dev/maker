@@ -46,7 +46,7 @@ class Template < ActiveRecord::Base
     options[:methods] = options[:methods] || []
     options[:methods] << :xml
     options[:methods] << :meta_xml
-    super.as_json  options
+    super.as_json options
   end
 
   def valid?
