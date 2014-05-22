@@ -36,11 +36,13 @@ Prerequisites
 Quick Start
 ===========
 
-- Clone github repository
+### Clone github repository
 
-    git clone https://github.com/cloudconductor/maker.git
+```bash
+git clone https://github.com/cloudconductor/maker.git
+```
 
-- Register application on github.com
+### Register application on github.com
 
 Sign in to github.com with your account and open following url.
 https://github.com/settings/applications/new
@@ -54,32 +56,40 @@ Register new application as following information.
 
 Please memorize "Client ID" and "Client secret" that indicate right-top corner in the next page when submit.
 
-- Copy and edit setting file for OAuth application.
+### Copy and edit setting file for OAuth application.
 
-    cd maker/config
-    cp oauth.yml.smp oauth.yml
-    vi oauth.yml
+```bash
+cd maker/config
+cp oauth.yml.smp oauth.yml
+vi oauth.yml
+```
 
 Change `client_id`, `client_secret` to your application information.
 If your host need proxy server to connect to the Internet, please edit `http_proxyaddr`, `http_proxyport`, `http_proxyuser` and `http_proxypass`. Otherwise delete these lines.
 
-- [Option] Copy and edit setting file for Proxy.
+### [Option] Copy and edit setting file for Proxy.
 
 If your host need proxy server, please copy and edit proxy.yml.
 
-- Install dependencies and initialize database
+### Install dependencies and initialize database
 
-    cd ..
-    bundle install
-    bundle exec rake init
+```bash
+cd ..
+bundle install
+bundle exec rake init
+```
 
-- Run server
+### Run server
 
-    bundle exec rake server:start
+```bash
+bundle exec rake server:start
+```
 
-- Stop server
+### Stop server
 
-    bundle exec rake server:stop
+```bash
+bundle exec rake server:stop
+```
 
 
 Copyright and License
